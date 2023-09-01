@@ -1,1 +1,1 @@
-# spring-thymeleaf-front-end
+# spring-thymeleaf-mvc-front-end[Only]
