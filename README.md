@@ -1,2 +1,2 @@
-# spring-thymeleaf-mvc-front-end[Only]
+# spring-thymeleaf-mvc-front-end-connection
 # HTML-bootstrap
