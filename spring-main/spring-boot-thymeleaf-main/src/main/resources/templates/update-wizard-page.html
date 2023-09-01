@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Page</title>
+</head>
+<body>
+<h1>Update Wizard Info</h1>
+<form th:action="@{'/update-' + ${wizard.id}}" th:object="${wizard}" method="post">
+    <p>Wizard Id</p>
+    <input type="number" class="form-control" id="id" name="id" th:field="*{id}" readonly/>
+    <p>Wizard name</p>
+    <input type="text" class="form-control" id="name" name="name" th:field="*{name}">
+    <p>Choose House</p>
+    <input type="text" class="form-control" id="house" name="house" th:field="*{house}"/>
+    <button type="submit">Update</button>
+</form>
+</body>
+</html>

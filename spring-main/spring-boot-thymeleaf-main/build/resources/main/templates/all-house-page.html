@@ -1,0 +1,61 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"-->
+<!--      xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>All House Info</h1>-->
+
+<!--<table>-->
+<!--    <tr>-->
+<!--        <th>Name</th>-->
+<!--        <th>Position</th>-->
+<!--    </tr>-->
+<!--    <tr th:each="house : ${houseList}">-->
+<!--        <td th:text="${house.name}"></td>-->
+<!--        <td th:text="${house.position}"></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<form action="/list-all-wizards">-->
+<!--    <button type="submit">List of Wizards</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+    <h1 class="text-center">All House Info</h1>
+
+    <table class="table table-dark table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="house : ${houseList}">
+            <td th:text="${house.name}"></td>
+            <td th:text="${house.position}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form action="/list-all-wizards">
+        <button type="submit" class="btn btn-dark">List of Wizards</button>
+    </form>
+</div>
+</body>
+</html>

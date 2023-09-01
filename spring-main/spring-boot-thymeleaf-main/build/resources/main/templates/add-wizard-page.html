@@ -1,0 +1,55 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"-->
+<!--      xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Add Wizard Info</h1>-->
+<!--<form action="/save-wizard" method="post">-->
+<!--    <p>Wizard Id</p>-->
+<!--    <input type="number" name="id"/>-->
+<!--    <p>Wizard name</p>-->
+<!--    <input type="text" name="name"/>-->
+<!--    <p>Choose House</p>-->
+<!--    <input type="text" name="house"/>-->
+<!--    <button type="submit">Add Wizard</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+    <h1 class="text-center">Add Wizard Info</h1>
+
+    <form action="/save-wizard" method="post">
+        <div class="form-group">
+            <label for="id">Wizard Id</label>
+            <input type="number" name="id" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Wizard name</label>
+            <input type="text" name="name" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="house">Choose House</label>
+            <input type="text" name="house" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Wizard</button>
+    </form>
+</div>
+</body>
+</html>

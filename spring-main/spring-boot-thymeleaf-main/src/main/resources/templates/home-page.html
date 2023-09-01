@@ -1,0 +1,143 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"-->
+<!--      xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+
+<!--    <title>Home Page</title>-->
+
+<!--</head>-->
+<!--<body >-->
+<!--<h1>Welcome To Hogwarts!</h1>-->
+<!--<h4>This site is not for muggles!</h4>-->
+
+<!--    <form action="/list-all-houses">-->
+<!--        <button type="submit">List All Houses</button>-->
+<!--    </form>-->
+
+
+
+<!--    <form action="/find-by-position" method="post">-->
+<!--        <input type="number" name="position"/>-->
+<!--        <button type="submit">Find Houses By Their Positions</button>-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"-->
+<!--      xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+<!--    &lt;!&ndash; Add Bootstrap CSS link &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+
+<!--    <style>-->
+<!--        body {-->
+<!--            margin: 0; /* Remove default margin */-->
+<!--            padding: 0; /* Remove default padding */-->
+<!--            position: relative; /* For positioning the background image */-->
+<!--        }-->
+
+<!--        .background-image {-->
+<!--            background-image: url('hogwarts.jpg'); /* Replace with your image URL */-->
+<!--            background-size: cover;-->
+<!--            background-position: center;-->
+<!--            position: absolute;-->
+<!--            top: 0;-->
+<!--            bottom: 0;-->
+<!--            left: 0;-->
+<!--            right: 0;-->
+<!--            opacity: 0.5; /* Adjust the opacity value as needed */-->
+<!--            z-index: -1; /* Send the background image to the back */-->
+<!--        }-->
+
+<!--        .content {-->
+<!--            padding: 20px;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; Background image with reduced opacity &ndash;&gt;-->
+<!--<div class="background-image"></div>-->
+
+<!--&lt;!&ndash; Content container using Bootstrap's container class &ndash;&gt;-->
+<!--<div class="container content">-->
+<!--    <h1>Welcome To Hogwarts!</h1>-->
+<!--    <h4>This site is not for muggles!</h4>-->
+
+<!--    <form action="/list-all-houses">-->
+<!--        <button type="submit" class="btn btn-primary">List All Houses</button>-->
+<!--    </form>-->
+
+<!--    <form action="/find-by-position" method="post">-->
+<!--        <input type="number" name="position" class="form-control" placeholder="Enter position"/>-->
+<!--        <button type="submit" class="btn btn-success">Find Houses By Their Positions</button>-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"-->
+<!--      xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+
+<!--    <title>Home Page</title>-->
+<!--</head>-->
+<!--<body style="background-image: url('hogwarts.jpg'); background-size: cover; background-position: center;">-->
+
+<!--<div class="container content">-->
+<!--    <h1>Welcome To Hogwarts!</h1>-->
+<!--    <h4>This site is not for muggles!</h4>-->
+
+<!--    <form action="/list-all-houses">-->
+<!--        <button type="submit" class="btn btn-primary">List All Houses</button>-->
+<!--    </form>-->
+
+<!--    <form action="/find-by-position" method="post">-->
+<!--        <input type="number" name="position" class="form-control" placeholder="Enter position"/>-->
+<!--        <button type="submit" class="btn btn-success">Find Houses By Their Positions</button>-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Home Page</title>
+</head>
+<body>
+<div style="background-image: url('hogwarts.jpg'); background-size: cover; background-position: center; position: fixed; top: 0; bottom: 0; left: 0; right: 0; opacity: 0.5; z-index: -1;"></div>
+
+<div class="container pt-5">
+    <h1>Welcome To Hogwarts!</h1>
+    <h4>This site is not for muggles!</h4>
+
+    <form action="/list-all-houses">
+        <button type="submit" class="btn btn-dark">List All Houses</button>
+    </form>
+
+    <form action="/find-by-position" method="post">
+        <input type="number" name="position" class="form-control mb-2" placeholder="Enter position"/>
+        <button type="submit" class="btn btn-dark">Find Houses By Their Positions</button>
+    </form>
+</div>
+</body>
+</html>
+
+

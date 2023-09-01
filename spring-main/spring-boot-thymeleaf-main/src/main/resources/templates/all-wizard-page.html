@@ -1,0 +1,81 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml"-->
+<!--      xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Wizard Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>All Wizards Info</h1>-->
+
+<!--<table>-->
+<!--    <tr>-->
+<!--        <th>Id</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>House</th>-->
+<!--        <th colspan="2" scope="col">Edits</th>-->
+<!--    </tr>-->
+<!--    <tr th:each="wizards : ${wizardsList}">-->
+<!--        <td th:text="${wizards.id}"></td>-->
+<!--        <td th:text="${wizards.name}"></td>-->
+<!--        <td th:text="${wizards.house}"></td>-->
+<!--        <td><a th:href="@{'/update-'+${wizards.id}}"><button>Update</button></a></td>-->
+<!--        <td><a th:href="@{'/delete/'+${wizards.id}}"><button>Delete</button></a></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<form action="/add-wizards">-->
+<!--    <button type="submit">Add Wizards</button>-->
+<!--</form>-->
+<!--<form action="/find-by-id" method="post">-->
+<!--    <input type="number" name="id"/>-->
+<!--    <button type="submit">Find Wizards by their ID</button>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+
+<div class="container mt-5">
+    <h1 class="text-center">All Wizards Info</h1>
+
+    <table class="table table-dark table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>House</th>
+            <th colspan="2">Edits</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="wizards : ${wizardsList}">
+            <td th:text="${wizards.id}"></td>
+            <td th:text="${wizards.name}"></td>
+            <td th:text="${wizards.house}"></td>
+            <td><a th:href="@{'/update-' + ${wizards.id}}"><button class="btn btn-success">Update</button></a></td>
+            <td><a th:href="@{'/delete/' + ${wizards.id}}"><button class="btn btn-danger">Delete</button></a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form action="/add-wizards">
+        <button type="submit" class="btn btn-primary">Add Wizards</button>
+    </form>
+
+    <form action="/find-by-id" method="post">
+        <input type="number" name="id" class="form-control mb-2" placeholder="Enter ID"/>
+        <button type="submit" class="btn btn-info">Find Wizards by ID</button>
+    </form>
+</div>
+</body>
+</html>
+
+
